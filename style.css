@@ -1,0 +1,107 @@
+.square-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 60px;
+    border: 3px solid #4b6cb7;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.top-card{
+    background-color: black;
+    background-size: cover;
+}
+
+.button1{
+    background-color: #4b6cc1;
+    color: white;
+    border-width: 0px;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+}
+.top-card-txt{
+    color: white;
+}
+.p {
+    color: #9aa5b1;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.fact {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+}
+.pic {
+    height: 80px;
+    width: 80px;
+}
+.card-txt {
+    font-weight: 700;
+    text-align: center;
+}
+.pic1{
+    height: 80px;
+    width: 150px;
+}
+ul{
+    font-size: 25px;
+}
+li{
+    font-size: 15px;
+    list-style-type: square;
+    list-style-position: inside;
+}
+.contact-section {
+    background-color: black;
+    color: white;
+}
+
+.contact-icons a {
+    color: #4b6cc1;
+    font-size: 30px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.contact-icons a:hover {
+    color: #cced00;
+}
+html {
+    scroll-behavior: smooth;
+}
+section, 
+#home, #about, #skills, #projects, #resume, #contact {
+    scroll-margin-top: 80px;
+}
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h4 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #6c757d;
+}
+
+.project-card ul {
+    padding-left: 18px;
+}
+span{
+    font-size: 15px;
+}
+.b1{
+    height: 50px;
+    width: 200px;
+}

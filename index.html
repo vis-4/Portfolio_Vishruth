@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      
+</head>
+
+<body>
+
+    <!-- NAVBAR + HERO -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand square-border" id="decoration" href="#">VR.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarNavAltMarkup">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto" id="white-text">
+                <a class="nav-link active" href="#home">Home</a>
+                <a class="nav-link"  href="#about">About me</a>
+                <a class="nav-link"  href="#skills">Skills</a>
+                <a class="nav-link"  href="#project">Projects</a>
+                <a class="nav-link"  href="#resume">Resume</a>
+                <a class="nav-link"  href="#contact">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home" class="top-card d-flex flex-column justify-content-center p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-md-none">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-banner-img.png" class="w-75" />
+                </div>
+                <div class="col-12 col-md-7 order-md-1 mb-3">
+                    <h1 class="top-card-txt mt-3">Hey, I am Vishruth Reddy Thatiparthi</h1>
+                    <p class="top-card-txt">Software Developer (Fresher)</p>
+                    <button class="button1 p-2" onclick="scrollToContact()">Contact Me</button>
+                </div>
+                <div class="col-12 col-md-5 d-none d-md-block order-md-2">
+                    <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-banner-img.png" class="w-75" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-none d-md-block">
+                    <img src="images/profile.png" class="w-75 mt-3" />
+                </div>
+                <div class="col-12 col-md-6 mt-4">
+                    <h1>About me</h1>
+                    <img src="images/profile.png" class="w-75 mt-3 d-md-none" />
+                    <p>
+                      I am Vishruth Reddy Thatiparthi, a B.Tech Computer Science and Engineering graduate
+                      from GITAM University (2021–2025). I have a strong foundation in Python, JavaScript,
+                      and web development, and I have built real-world applications including a
+                      vehicle pooling system and a machine learning based credit card approval
+                      prediction model.
+                  </p>
+                  
+                  <p>
+                      I enjoy solving practical problems and turning ideas into working solutions.
+                      I am comfortable working with HTML, CSS, Bootstrap, SQL, GitHub, and VS Code,
+                      and I continuously improve my skills through project-based learning.
+                      I am currently seeking an entry-level software or web development role
+                      where I can learn, contribute, and grow.
+                  </p>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SKILLS -->
+<section id="skills" class="bg-main2 p-4">
+  <div class="container">
+      <h2 class="fact mb-4">Skills</h2>
+
+      <div class="row text-center">
+
+          <!-- HTML -->
+          <div class="col-6 col-md-3 mb-4">
+              <div class="card1 shadow h-100">
+                  <img src="images/html.jpg" class="pic" alt="HTML">
+                  <p class="card-txt">HTML</p>
+              </div>
+          </div>
+
+          <!-- CSS -->
+          <div class="col-6 col-md-3 mb-4">
+              <div class="card1 shadow h-100">
+                  <img src="images/css.png" class="pic1" alt="CSS">
+                  <p class="card-txt">CSS</p>
+              </div>
+          </div>
+
+          <!-- Bootstrap -->
+          <div class="col-6 col-md-3 mb-4">
+              <div class="card1 shadow h-100">
+                  <img src="images/bs.jpg" class="pic" alt="Bootstrap">
+                  <p class="card-txt">Bootstrap</p>
+              </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="col-6 col-md-3 mb-4">
+              <div class="card1 shadow h-100">
+                  <img src="images/js.jpg" class="pic" alt="JavaScript">
+                  <p class="card-txt">JavaScript</p>
+              </div>
+          </div>
+
+          <!-- Python -->
+          <div class="col-6 col-md-3 mb-4">
+              <div class="card1 shadow h-100">
+                  <img src="images/python.png" class="pic" alt="Python">
+                  <p class="card-txt">Python</p>
+              </div>
+          </div>
+
+          <!-- SQL -->
+          <div class="col-6 col-md-3 mb-4">
+              <div class="card1 shadow h-100">
+                  <img src="images/sql.jpg" class="pic" alt="SQL">
+                  <p class="card-txt">SQL</p>
+              </div>
+          </div>
+
+          <!-- GitHub -->
+          <div class="col-6 col-md-3 mb-4">
+              <div class="card1 shadow h-100">
+                  <img src="images/git.jpg" class="pic" alt="GitHub">
+                  <p class="card-txt">GitHub</p>
+              </div>
+          </div>
+
+          <!-- VS Code -->
+          <div class="col-6 col-md-3 mb-4">
+              <div class="card1 shadow h-100">
+                  <img src="images/vs.jpg" class="pic" alt="VS Code">
+                  <p class="card-txt">VS Code</p>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+
+    <!-- PROJECTS -->
+    <div id="project" class="bg-card p-4">
+      <div class="container">
+          <h2 class="fact mb-4">Projects</h2>
+  
+          <div class="row">
+  
+              <!-- Project 1 -->
+              <div class="col-12 col-md-6 mb-4">
+                  <div class="project-card p-4 h-100">
+                      <h4>Vehicle Pooling System</h4>
+  
+                      <p>
+                          Designed a campus ride-sharing solution using Google development tools
+                          to connect students and staff.
+                      </p>
+  
+                      <ul>
+                          <li>
+                              Designed a ride-sharing platform using Google Sites, Google Forms, and Google Maps
+                              to connect 500+ staff and students at GITAM Visakhapatnam campus.
+                          </li>
+                          <li>
+                              Implemented a rule-based ride coordination workflow by organizing user responses
+                              based on location and travel schedules.
+                          </li>
+                          <li>
+                              Reduced campus traffic congestion and carbon emissions by enabling eco-friendly transport
+                              through an accessible web interface.
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+  
+              <!-- Project 2 -->
+              <div class="col-12 col-md-6 mb-4">
+                  <div class="project-card p-4 h-100">
+                      <h4>Prediction of Credit Card Approval</h4>
+  
+                      <p>
+                          Built a machine learning model to predict credit card approval outcomes
+                          using applicant data.
+                      </p>
+  
+                      <ul>
+                          <li>
+                              Executed the full ML lifecycle including data collection, preprocessing,
+                              feature engineering, and model development.
+                          </li>
+                          <li>
+                              Applied Logistic Regression, Random Forest, and Support Vector Machine algorithms
+                              to classify approval outcomes.
+                          </li>
+                          <li>
+                              Performed data preprocessing such as handling missing values, encoding categorical features,
+                              and feature selection to improve model accuracy.
+                          </li>
+                          <li>
+                              Evaluated and tuned models using accuracy, precision, recall, and F1-score
+                              to ensure balanced and reliable predictions.
+                          </li>
+                      </ul>
+                      <div class="mt-3">
+                        <a href="https://github.com/vis-4/Prediction-of-Credit-Card-Approval/tree/main" target="_blank">
+                           View Project
+                        </a>
+                    </div>
+                  </div>
+              </div>
+  
+          </div>
+      </div>
+  </div>
+  
+
+  <section id="resume" class="p-4 text-center">
+    <div class="container">
+        <h2 class="fact mb-3 text-left">Resume</h2>
+        <button class="button1 b1 p-2" onclick="downloadResume()">Download Resume</button>
+    </div>
+</section>
+
+    <!-- CONTACT ME -->
+    <div id="contact" class="contact-section p-4">
+      <div class="container text-center">
+          <h2>Contact Me</h2>
+          <p class="mb-4">
+              I’m open to entry-level software and frontend development opportunities.
+          </p>
+
+          <div class="contact-icons">
+
+            <div class="mb-3">
+                <a href="mailto:vrt151203@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span> vrt151203@gmail.com</span>
+                </a>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <div class="mb-3">
+                <a href="https://github.com/vis-4" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+        
+                <div class="mb-3">
+                    <a href="https://linkedin.com/in/vishruth4104" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+        
+        </div>
+        
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
