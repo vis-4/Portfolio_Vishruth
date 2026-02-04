@@ -1,107 +1,318 @@
-.square-border {
+/* =========================
+   GLOBAL
+========================= */
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #e5e7eb;
+  }
+  
+  section,
+  #home, #about, #skills, #project, #resume, #contact {
+    scroll-margin-top: 80px;
+  }
+  
+  /* =========================
+     NAVBAR LOGO
+  ========================= */
+  .square-border {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 60px;
-    border: 3px solid #4b6cb7;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.top-card{
-    background-color: black;
-    background-size: cover;
-}
-
-.button1{
-    background-color: #4b6cc1;
-    color: white;
-    border-width: 0px;
-    border-radius: 5px;
-    height: 40px;
-    width: 100px;
-}
-.top-card-txt{
-    color: white;
-}
-.p {
-    color: #9aa5b1;
-    text-align: left;
-    font-size: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+    font-weight: 700;
+  }
+  
+  /* =========================
+     HERO SECTION
+  ========================= */
+  .top-card {
+    background: linear-gradient(180deg, #020617, #0f172a);
+    min-height: 100vh;
+    color: #e5e7eb;
+  }
+  
+  .hero-title {
+    font-size: 52px;
+    font-weight: 700;
+  }
+  
+  .hero-subtitle {
+    font-size: 22px;
+    color: #38bdf8;
     margin-top: 10px;
-    margin-bottom: 20px;
-}
-.fact {
-    color: black;
-    font-size: 30px;
-    font-weight: 700;
-}
-.pic {
-    height: 80px;
-    width: 80px;
-}
-.card-txt {
-    font-weight: 700;
-    text-align: center;
-}
-.pic1{
-    height: 80px;
-    width: 150px;
-}
-ul{
-    font-size: 25px;
-}
-li{
-    font-size: 15px;
-    list-style-type: square;
-    list-style-position: inside;
-}
-.contact-section {
-    background-color: black;
-    color: white;
-}
-
-.contact-icons a {
-    color: #4b6cc1;
-    font-size: 30px;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-.contact-icons a:hover {
-    color: #cced00;
-}
-html {
-    scroll-behavior: smooth;
-}
-section, 
-#home, #about, #skills, #projects, #resume, #contact {
-    scroll-margin-top: 80px;
-}
-.project-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.project-card h4 {
-    margin-bottom: 10px;
-}
-
-.project-card p {
-    color: #6c757d;
-}
-
-.project-card ul {
-    padding-left: 18px;
-}
-span{
-    font-size: 15px;
-}
-.b1{
+  }
+  
+  .hero-desc {
+    font-size: 18px;
+    color: #cbd5f5;
+    max-width: 520px;
+    margin-top: 15px;
+  }
+  
+  /* =========================
+     BUTTONS
+  ========================= */
+  .button1 {
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-weight: 600;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  .button1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(56,189,248,0.4);
+  }
+  
+  .b1 {
     height: 50px;
     width: 200px;
+  }
+  
+  /* =========================
+     HEADINGS & TEXT
+  ========================= */
+  .fact {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f8fafc;
+  }
+  
+  p {
+    color: #cbd5f5;
+    line-height: 1.7;
+  }
+  
+  /* =========================
+     SKILLS
+  ========================= */
+  .card1 {
+    background: #111827;
+    border-radius: 16px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card1:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  }
+  
+  .pic {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .pic1 {
+    height: 80px;
+    width: 150px;
+  }
+  
+  .card-txt {
+    margin-top: 12px;
+    font-weight: 500;
+    color: #e5e7eb;
+    text-align: center;
+  }
+  
+  /* =========================
+     PROJECTS
+  ========================= */
+  .project-card {
+    background: #111827;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card p {
+    color: #cbd5f5;
+  }
+  
+  .project-card ul {
+    padding-left: 18px;
+  }
+  
+  .project-card li {
+    font-size: 14px;
+    color: #e5e7eb;
+    margin-bottom: 6px;
+  }
+  
+  /* =========================
+     CONTACT
+  ========================= */
+  .contact-section {
+    background-color: #020617;
+    color: #e5e7eb;
+  }
+  
+  .contact-icons a {
+    color: #e5e7eb;
+    font-size: 26px;
+    margin: 0 14px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-icons a:hover {
+    color: #38bdf8;
+    transform: translateY(-3px);
+  }
+  
+  /* =========================
+     MOBILE OPTIMIZATION
+  ========================= */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 36px;
+    }
+  
+    .hero-subtitle {
+      font-size: 18px;
+    }
+  
+    .hero-desc {
+      font-size: 16px;
+    }
+  
+    .fact {
+      font-size: 26px;
+    }
+  
+    .pic {
+      height: 64px;
+      width: 64px;
+    }
+  
+    .pic1 {
+      height: 64px;
+      width: 120px;
+    }
+  
+    .button1 {
+      width: auto;
+      padding: 10px 20px;
+    }
+  }
+/* =========================
+   THEME TOGGLE BUTTON
+========================= */
+.theme-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #e5e7eb;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  
+  /* =========================
+     LIGHT THEME
+  ========================= */
+  body.light {
+    background-color: #ffffff;
+    color: #111827;
+  }
+  
+  body.light .top-card,
+  body.light .contact-section {
+    background: #f8fafc;
+  }
+  
+  body.light .card1,
+  body.light .project-card {
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  }
+  
+  body.light p,
+  body.light li {
+    color: #374151;
+  }
+  
+  body.light .fact {
+    color: #111827;
+  }
+  
+  body.light .contact-icons a {
+    color: #111827;
+  }
+  
+  body.light .contact-icons a:hover {
+    color: #2563eb;
+  }
+/* ===== LIGHT THEME HERO FIX ===== */
+body.light .top-card {
+    background: linear-gradient(180deg, #f8fafc, #eef2ff);
+  }
+  
+  body.light .hero-title {
+    color: #111827;
+  }
+  
+  body.light .hero-subtitle {
+    color: #2563eb;
+  }
+  
+  body.light .hero-desc {
+    color: #374151;
+  }
+/* ===== LIGHT THEME CONTACT FIX ===== */
+body.light .contact-section {
+    background-color: #f8fafc;
+    color: #111827;
+  }
+  
+  body.light .contact-section p {
+    color: #374151;
+  }
+  
+  body.light .contact-icons a {
+    color: #111827;
+  }
+  
+  body.light .contact-icons a:hover {
+    color: #2563eb;
+  }
+  body.light .button1 {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  }
+/* ===== SMOOTH THEME TRANSITION ===== */
+body,
+.top-card,
+.contact-section,
+.card1,
+.project-card,
+p,
+li,
+.hero-title,
+.hero-subtitle,
+.hero-desc {
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    box-shadow 0.35s ease;
 }
+          

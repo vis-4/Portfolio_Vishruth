@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-      
-</head>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous" />
+    
+        <link rel="stylesheet" href="style.css">
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    
 
 <body>
 
@@ -35,6 +42,10 @@
                 <a class="nav-link"  href="#project">Projects</a>
                 <a class="nav-link"  href="#resume">Resume</a>
                 <a class="nav-link"  href="#contact">Contact Me</a>
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+                    🌙
+                </button>
+                  
             </div>
         </div>
     </nav>
@@ -46,8 +57,11 @@
                     <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-banner-img.png" class="w-75" />
                 </div>
                 <div class="col-12 col-md-7 order-md-1 mb-3">
-                    <h1 class="top-card-txt mt-3">Hey, I am Vishruth Reddy Thatiparthi</h1>
-                    <p class="top-card-txt">Software Developer (Fresher)</p>
+                    <h1 class="hero-title">Vishruth Reddy Thatiparthi</h1>
+                    <p class="hero-subtitle">Python & Full-Stack Developer</p>
+                    <p class="hero-desc">
+                    I build practical web and data-driven systems that solve real-world problems.
+                    </p>
                     <button class="button1 p-2" onclick="scrollToContact()">Contact Me</button>
                 </div>
                 <div class="col-12 col-md-5 d-none d-md-block order-md-2">
@@ -68,19 +82,11 @@
                     <h1>About me</h1>
                     <img src="images/profile.png" class="w-75 mt-3 d-md-none" />
                     <p>
-                      I am Vishruth Reddy Thatiparthi, a B.Tech Computer Science and Engineering graduate
-                      from GITAM University (2021–2025). I have a strong foundation in Python, JavaScript,
-                      and web development, and I have built real-world applications including a
-                      vehicle pooling system and a machine learning based credit card approval
-                      prediction model.
+                        Hi, I am Vishruth Reddy Thatiparthi. I completed my B.Tech in Computer Science and Engineering from GITAM University from 2021 to 2025. I have experience in Python, JavaScript, and web development. I have used these skills to develop a vehicle pooling system and a model for predicting the approval outcome of a credit card.
                   </p>
                   
                   <p>
-                      I enjoy solving practical problems and turning ideas into working solutions.
-                      I am comfortable working with HTML, CSS, Bootstrap, SQL, GitHub, and VS Code,
-                      and I continuously improve my skills through project-based learning.
-                      I am currently seeking an entry-level software or web development role
-                      where I can learn, contribute, and grow.
+                    I like finding actual problems and using them to develop solutions that work perfectly. I am proficient in HTML, CSS, Bootstrap, SQL, GitHub, and VS Code. I am continuously enhancing my skills by working on new projects and learning from them. Currently, I am searching for an entry-level position in software and web development.
                   </p>
                   
                 </div>
@@ -177,13 +183,13 @@
                       <h4>Vehicle Pooling System</h4>
   
                       <p>
-                          Designed a campus ride-sharing solution using Google development tools
-                          to connect students and staff.
+                          Designed a campus ride-sharing platform using Google development tools
+                          to decrease the environmental damage and to connect students and staff.
                       </p>
   
                       <ul>
                           <li>
-                              Designed a ride-sharing platform using Google Sites, Google Forms, and Google Maps
+                              Designed a ride sharing platform using Google Sites, Google Forms, and Google Maps
                               to connect 500+ staff and students at GITAM Visakhapatnam campus.
                           </li>
                           <li>
@@ -204,13 +210,12 @@
                       <h4>Prediction of Credit Card Approval</h4>
   
                       <p>
-                          Built a machine learning model to predict credit card approval outcomes
-                          using applicant data.
+                          Built a prediction model to approve credit card applications using applicant data.
                       </p>
   
                       <ul>
                           <li>
-                              Executed the full ML lifecycle including data collection, preprocessing,
+                              Executed the full lifecycle including data collection, preprocessing,
                               feature engineering, and model development.
                           </li>
                           <li>
