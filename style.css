@@ -315,4 +315,61 @@ li,
     color 0.35s ease,
     box-shadow 0.35s ease;
 }
-          
+/* =========================
+   MOBILE FIX (CRITICAL)
+========================= */
+@media (max-width: 768px) {
+
+  /* HERO */
+  .top-card {
+    min-height: auto;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    max-width: 100%;
+    margin: 12px auto;
+  }
+
+  /* HERO IMAGE */
+  #home img {
+    width: 80% !important;
+    margin: 20px auto 0;
+    display: block;
+  }
+
+  /* SKILLS GRID */
+  .card1 {
+    padding: 16px;
+  }
+
+  /* PROJECT CARDS */
+  .project-card {
+    padding: 18px;
+  }
+
+  .project-card h4 {
+    font-size: 18px;
+  }
+
+  /* CONTACT */
+  .contact-icons {
+    flex-direction: column;
+  }
+
+  .contact-icons a {
+    font-size: 22px;
+    margin: 8px 0;
+  }
+}
